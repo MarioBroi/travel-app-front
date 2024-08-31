@@ -58,21 +58,28 @@ export default {
 .header {
     text-align: center;
     padding-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .features {
     padding: 2rem;
+    display: flex;
+
 
     .feature {
-        margin-bottom: 5rem;
+        margin: 5rem 0.8rem;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
         p {
             padding-bottom: 1rem;
         }
 
         .trip-link {
+            margin: 0;
             color: black;
-            padding: 1rem 2rem;
+            padding: 0.5rem 1rem;
             border: 1px solid black;
             text-decoration: none;
         }
