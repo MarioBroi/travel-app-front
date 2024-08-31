@@ -30,10 +30,36 @@ export default {
 </script>
 
 <template>
-    <h2>Trips</h2>
-    <div v-for="trip in trips">
-        {{ trip.title }}
-        <br>
-        {{ trip.description }}
+
+    <div class="container">
+        <h2>Viaggi registrati</h2>
+        <div class="row">
+            <div class="col">
+                <div v-for="trip in trips">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                {{ trip.title }}
+                            </div>
+                            <div class="card-text">
+                                <p>
+                                    Descrizione: {{ trip.description }}
+                                </p>
+                                <p>
+                                    Inizio: {{ trip.start_date }}
+                                </p>
+                                <p>
+                                    Fine: {{ trip.end_date }}
+                                </p>
+                                <p>
+                                    Posti
+                                    {{ trip.places.title }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
