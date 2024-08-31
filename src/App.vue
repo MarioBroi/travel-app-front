@@ -1,27 +1,35 @@
 <script>
 import { RouterLink } from 'vue-router';
-import AppHome from './components/views/AppHome.vue';
-import AppForm from './components/views/AppForm.vue';
-import AppTrip from './components/views/AppTrip.vue';
-import AppDay from './components/views/AppDay.vue';
 
 export default {
   name: "App",
-  components: {
-    AppHome,
-    AppForm,
-    AppTrip,
-    AppDay
-  },
 }
 </script>
 
 <template>
-  <h1>Test</h1>
-  <AppHome />
-  <AppForm />
-  <AppTrip />
-  <AppDay />
+  <header>
+    <RouterLink :to="{ name: 'Home' }" class="trip-link">Home</RouterLink>
+    <RouterLink :to="{ name: 'AppForm' }" class="trip-link">Crea il viaggio</RouterLink>
+    <RouterLink :to="{ name: 'AppTrip' }" class="trip-link">Vai al viaggio</RouterLink>
+    <RouterLink :to="{ name: 'AppDay' }" class="trip-link">Vai al giorno</RouterLink>
+
+  </header>
+  <main>
+    <RouterView></RouterView>
+  </main>
 </template>
 
-<style></style>
+<style>
+.trip-link {
+  color: black;
+  padding: 1rem 2rem;
+  border: 1px solid black;
+  text-decoration: none;
+}
+
+.trip-link:hover {
+  background-color: #545252;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+</style>

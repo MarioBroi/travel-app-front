@@ -1,32 +1,32 @@
-import { createWebHistory, createRouter } from "vue-router";
-import AppHome from './components/views/AppHome.vue';
-import AppForm from './components/views/AppHome.vue';
-import AppTrip from './components/views/AppHome.vue';
-import AppDay from './components/views/AppHome.vue';
+import { createWebHistory, createRouter } from 'vue-router';
+import AppDay from './views/AppDay.vue';
+import AppForm from './views/AppForm.vue';
+import AppHome from './views/AppHome.vue';
+import AppTrip from './views/AppTrip.vue';
 
 const router = createRouter({
     history: createWebHistory(),
     routes: [
         {
             path: '/',
-            component: AppHome,
-            name: 'Home'
+            name: 'Home',
+            component: AppHome
         },
         {
             path: "/form",
-            component: AppForm,
             name: "AppForm",
+            component: AppForm
         },
         {
             path: "/trip",
-            component: AppTrip,
             name: "AppTrip",
+            component: AppTrip
         },
         {
             path: "/day",
-            component: AppDay,
             name: "AppDay",
-        }
+            component: AppDay
+        },
     ]
 })
 

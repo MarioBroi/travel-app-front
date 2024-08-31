@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 export default {
-    name: 'AppHome',
+    name: 'AppTrip',
     data() {
         return {
             trips: [],
@@ -26,12 +26,11 @@ export default {
             }
         },
     },
-};
+}
 </script>
 
 <template>
-    <h1>App Home</h1>
-    <h3>Test trips</h3>
+    <h2>Trips</h2>
     <div v-for="trip in trips">
         {{ trip.title }}
         <br>

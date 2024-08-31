@@ -1,12 +1,8 @@
 <script>
 import axios from 'axios';
-import AppHome from './AppHome.vue';
 
 export default {
   name: 'AppForm',
-  components: {
-    AppHome,
-  },
   data() {
     return {
       title: '',
@@ -46,8 +42,6 @@ export default {
     <br>
     <button type="submit" @click="createTrip()">Create Trip</button>
   </form>
-
-
 </template>
 
 <style></style>

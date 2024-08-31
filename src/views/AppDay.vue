@@ -5,5 +5,5 @@ export default {
 </script>
 
 <template>
-    <h1>AppDay</h1>
+    <h1>Giorni di viaggio</h1>
 </template>
