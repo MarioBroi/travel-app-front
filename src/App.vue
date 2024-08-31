@@ -7,12 +7,11 @@ export default {
 </script>
 
 <template>
-  <header>
+  <header class="mb-5">
     <RouterLink :to="{ name: 'Home' }" class="trip-link">Home</RouterLink>
     <RouterLink :to="{ name: 'AppForm' }" class="trip-link">Crea il viaggio</RouterLink>
     <RouterLink :to="{ name: 'AppTrip' }" class="trip-link">Vai al viaggio</RouterLink>
     <RouterLink :to="{ name: 'AppDay' }" class="trip-link">Vai al giorno</RouterLink>
-
   </header>
   <main>
     <RouterView></RouterView>
