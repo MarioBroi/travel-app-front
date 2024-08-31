@@ -1,6 +1,14 @@
 <script>
+import axios from 'axios';
+
 export default {
     name: 'AppTrip',
+    components: {},
+    data() {
+        return {
+            trip: null
+        }
+    },
 }
 </script>
 
